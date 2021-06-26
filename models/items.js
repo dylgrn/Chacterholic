@@ -43,7 +43,7 @@ const items = [
 // Routes
 // =============================================================
 
-app.get('/items.handlebars', (req, res) => {
+app.get('/items', (req, res) => {
   // Handlebars requires an object to be sent to the index.handlebars file.
   const data = {
     items: []
