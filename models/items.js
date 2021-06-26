@@ -31,14 +31,19 @@ const items = [
     deff: 10
   },
   {
-    itemType: 'potion'
+    itemType: 'Potion',
+    hp: 50
+  },
+  {
+    itemType: 'Armor',
+    def: 50
   }
 ];
 
 // Routes
 // =============================================================
 
-app.get('/all-items', (req, res) => {
+app.get('/items.handlebars', (req, res) => {
   // Handlebars requires an object to be sent to the index.handlebars file.
   const data = {
     items: []
