@@ -1,23 +1,17 @@
-<h1>Items</h1>
-<div>
-<ul>
-  {{#each data}}
-        <li>
-            <p>{{itemType}}</p>
-            <p>Attack:{{attack}}</p>
-            <P>Deffense:{{deff}}</P>
-        </li>
-  {{/each}}
-</ul>
-</div>
-
-<div>
-<ul>
-  {{#each data}}
-        <li>
-            <p>{{itemType}}</p>
-            <p>Attack:{{attack}}</p>
-            <P>Deffense:{{deff}}</P>
-        </li>
-  {{/each}}
-</ul>
+<form class="login-form">
+    <div>
+        <label for="item-type">Item:</label>
+        <input type="text" id="item-type" />
+    </div>
+    <div>
+        <label for="attack">attack:</label>
+        <input type="text" id="item-attack" />
+    </div>
+     <div>
+        <label for="deffense">Deffense:</label>
+        <input type="text" id="item-deffense" />
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>

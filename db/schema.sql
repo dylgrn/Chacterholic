@@ -11,3 +11,8 @@ CREATE TABLE accounts (
   email varchar(100) NOT NULL
 ) 
 
+CREATE TABLE items (
+  id int(10) NOT NULL,
+  itemtype varchar(50) NOT NULL,
+  itemattack
+)
