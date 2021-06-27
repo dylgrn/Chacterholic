@@ -2,7 +2,8 @@ DROP DATABASE IF EXISTS project_2;
 
 CREATE DATABASE project_2;
 
-USE project_2;
+-- USE project_2;
+
 
 CREATE TABLE accounts (
   id int(11) NOT NULL,
