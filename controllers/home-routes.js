@@ -24,6 +24,7 @@ router.get('/sign-up', (req, res) => {
     res.render('sign-up');
 });
 router.get('/homepage', (req, res) => {
+    console.log(req.session)
     res.render('homepage');
 
 });

@@ -15,9 +15,12 @@ async function signupFormHandler(event) {
         password
       }),
       headers: { 'Content-Type': 'application/json' }
-    });
+    })
+      const data = await response.json();
 
     if (response.ok) {
+      console.log(data)
+      localStorage.setItem("username", data.username);
       document.location.replace('/homepage');
     } else {
       alert(response.statusText);
