@@ -13,6 +13,5 @@ CREATE TABLE accounts (
 
 CREATE TABLE items (
   id int(10) NOT NULL,
-  itemtype varchar(50) NOT NULL,
-  itemattack
+  item varchar(50) NOT NULL,
 )
