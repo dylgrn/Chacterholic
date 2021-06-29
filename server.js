@@ -15,9 +15,11 @@ const sess = {
     cookie: {},
     resave: false,
     saveUninitialized: true,
+
      store: new SequelizeStore({
          db: sequelize
      })
+
 };
 
 app.use(session(sess));
@@ -34,6 +36,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(require('./controllers/'));
+
 //sets up to use routes
 app.use(routes);
 
@@ -45,3 +48,4 @@ sequelize.sync({ force: true }).then(() => {
 // app.listen(PORT, () => {
 //     console.log('App listening on PORT ' + PORT);
 // });
+
