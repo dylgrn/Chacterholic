@@ -1,3 +1,4 @@
+
 async function loginFormHandler(event) {
   event.preventDefault();
 
@@ -13,8 +14,11 @@ async function loginFormHandler(event) {
           }),
           headers: { 'Content-Type': 'application/json' }
       });
+      const data = await response.json();
 
       if (response.ok) {
+        console.log(data)
+        localStorage.setItem("username", data.username);
           document.location.replace('/homepage');
       } else {
           alert(response.statusText);
@@ -23,3 +27,4 @@ async function loginFormHandler(event) {
 }
 
 document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+

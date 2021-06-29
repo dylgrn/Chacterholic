@@ -2,6 +2,7 @@ DROP DATABASE IF EXISTS project_2;
 
 CREATE DATABASE project_2;
 
+
 -- USE project_2;
 
 
@@ -17,3 +18,4 @@ CREATE DATABASE project_2;
 --   itemtype varchar(50) NOT NULL,
 --   itemattack
 -- )
+
