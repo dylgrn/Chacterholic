@@ -17,9 +17,9 @@ router.get('/login', (req, res) => {
 });
 
 
-router.get('/character', (req, res) => {
-    res.render('character');
-  });
+// router.get('/character', (req, res) => {
+//     res.render('character');
+//   });
 
 
 router.get('/items', (req, res) => {
