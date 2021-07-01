@@ -16,9 +16,9 @@ const sess = {
     resave: false,
     saveUninitialized: true,
 
-    //  store: new SequelizeStore({
-    //      db: sequelize
-    //  })
+     store: new SequelizeStore({
+         db: sequelize
+     })
 
 };
 
@@ -42,10 +42,10 @@ app.use(routes);
 
 
 
-// sequelize.sync({ force: true }).then(() => {
-//     app.listen(PORT, () => console.log('Now listening'));
-// });
-app.listen(PORT, () => {
-    console.log('App listening on PORT ' + PORT);
+sequelize.sync({ force: true }).then(() => {
+    app.listen(PORT, () => console.log('Now listening'));
 });
+// app.listen(PORT, () => {
+//     console.log('App listening on PORT ' + PORT);
+// });
 
