@@ -1,15 +1,15 @@
 <form class="login-form">
     <div>
         <label for="item-type">Item:</label>
-        <input type="text" id="item-type" />
+        <input type="text" id="item-type" name="item_type" />
     </div>
     <div>
-        <label for="attack">attack:</label>
-        <input type="text" id="item-attack" />
+        <label for="attack">Attack:</label>
+        <input type="text" id="item-attack" name="item_attack" />
     </div>
      <div>
         <label for="deffense">Deffense:</label>
-        <input type="text" id="item-deffense" />
+        <input type="text" id="item-deffense" name="item_deffense"/>
     </div>
     <div>
         <button type="submit">Submit</button>
@@ -18,8 +18,10 @@
 
 <article class="post">
   <div class="title">
-    <p>{{itemtype}}</p>
-    <p>{{itemD}}</p>
-    <p>{{itemD}}</p>
+      {{#each rows}}
+    <p>{{this.item_type}}</p>
+    <p>{{this.item_attack}}</p>
+    <p>{{this.item_deffense}}</p>
+    {{/each}}
   </div>
 </article>

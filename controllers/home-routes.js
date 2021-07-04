@@ -16,8 +16,23 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
+
+router.get('/character', (req, res) => {
+    res.render('character');
+  });
+
+
 router.get('/items', (req, res) => {
     res.render('items');
 });
+router.get('/sign-up', (req, res) => {
+    res.render('sign-up');
+});
+router.get('/homepage', (req, res) => {
+    console.log(req.session)
+    res.render('homepage');
+
+});
+
 
 module.exports = router;

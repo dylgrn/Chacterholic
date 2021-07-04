@@ -15,14 +15,16 @@ const sess = {
     cookie: {},
     resave: false,
     saveUninitialized: true,
-    //  store: new SequelizeStore({
-        //  db: sequelize
-    //  })
+
+     store: new SequelizeStore({
+         db: sequelize
+     })
+
 };
 
 app.use(session(sess));
 
-// const helpers = require('./utils/helpers');
+
 
 const hbs = exphbs.create({});
 
@@ -35,9 +37,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(require('./controllers/'));
 
-// sequelize.sync({ force: false }).then(() => {
-//     app.listen(PORT, () => console.log('Now listening'));
-// });
-app.listen(PORT, () => {
-    console.log('App listening on PORT ' + PORT);
+//sets up to use routes
+app.use(routes);
+
+
+
+sequelize.sync({ force: true }).then(() => {
+    app.listen(PORT, () => console.log('Now listening'));
 });
+// app.listen(PORT, () => {
+//     console.log('App listening on PORT ' + PORT);
+// });
+

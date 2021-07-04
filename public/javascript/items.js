@@ -1,3 +1,7 @@
+const { response } = require('express');
+const db = require('../../db/connection');
+const router = require('express').Router();
+
 function signupFormHandler(event) {
     event.preventDefault();
   
@@ -8,15 +12,23 @@ function signupFormHandler(event) {
     if (itemType && itemA && itemD) {
       fetch('/api/items', {
         method: 'post',
+        headers: {
+          'content-type': 'application/json'
+        },
         body: JSON.stringify({
           itemType,
           itemA,
           itemD
-        }),
-        headers: { 'Content-Type': 'application/json' }
-      }).then((response) => { console.log(response) })
+        })
+      }).then((results) => {
+        return results.json
+       }).then((response) => {
+         console.log('got results', response)
+       })
     }
   
   }
   
   document.querySelector('.login-form').addEventListener('submit', signupFormHandler);
+
+  module.exports = router;
