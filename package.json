@@ -1,36 +1,43 @@
 {
-    "name": "project_2",
-    "version": "1.0.0",
-    "description": "",
-    "main": "server.js.js",
-    "scripts": {
-
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "nodemon server"
-
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "api": "^3.2.2",
-        "bcrypt": "^5.0.1",
-        "connect-session-sequelize": "^7.1.1",
-        "console.table": "^0.10.0",
-        "dotenv": "^10.0.0",
-        "express": "^4.17.1",
-        "express-handlebars": "^5.3.2",
-        "express-session": "^1.17.2",
-        "handlebars": "^4.7.7",
-        "inquirer": "^8.1.0",
-        "mysql": "^2.18.1",
-        "mysql2": "^2.2.5",
-
-        "passport": "^0.4.1",
-        "passport-local": "^1.0.0",
-        "sequelize": "^6.6.2"
-    },
-    "devDependencies": {
-        "nodemon": "^2.0.7"
-
-    }
+  "name": "project_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "api": "^3.2.2",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "connect-session-sequelize": "^7.1.1",
+    "console.table": "^0.10.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "express-session": "^1.17.2",
+    "handlebars": "^4.7.7",
+    "inquirer": "^8.1.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.2",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylgrn/Chacterholic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dylgrn/Chacterholic/issues"
+  },
+  "homepage": "https://github.com/dylgrn/Chacterholic#readme"
 }
