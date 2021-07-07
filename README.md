@@ -21,7 +21,4 @@ n/a
 ### Questions:
 If you have any questions contact us on [GitHub](https://github.com/shiromajh) 
 
-![picture](https://github.com/shiromajh.png?size=80)
-![picture](https://github.com/dylgrn.png?size=80)
-![picture](https://github.com/kgentel.png?size=80)
-![picture](https://github.com/shanemcf.png?size=80)
+
