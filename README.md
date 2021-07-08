@@ -10,7 +10,7 @@ Having to update and keep track of a character sheet can be a real pain especial
 Characterholic also has a built in D20 role function so no more worrying about who’s bringing the dice!
 
 
-![picture](https://github.com/dylgrn.png?size=50)
+
 
 ### License:
 This project is licensed under:
@@ -22,6 +22,6 @@ n/a
 ### Questions:
 If you have any questions contact us on [GitHub](https://github.com/shiromajh) 
 
-![picture](https://github.com/shiromajh.png?size=50)
-
 ![picture](https://github.com/dylgrn.png?size=50)
+
+
