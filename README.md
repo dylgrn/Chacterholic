@@ -23,7 +23,7 @@ No contributions at this time
 ### Tests:
 n/a
 ### Questions:
-If you have any questions contact us on [GitHub](https://github.com/shiromajh) 
+If you have any questions contact us on [GitHub](https://github.com/dylgrn) 
 
 ![picture](https://github.com/dylgrn.png?size=50)
 
