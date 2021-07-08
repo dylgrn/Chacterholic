@@ -1,5 +1,5 @@
 # Characterholic![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
-Characterholic## Table of Contents:
+Characterholic Table of Contents:
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
