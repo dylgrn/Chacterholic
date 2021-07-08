@@ -23,4 +23,4 @@ If you have any questions contact us on [GitHub](https://github.com/shiromajh)
 
 ![picture](https://github.com/shiromajh.png?size=50)
 
-![picture](https://github.com/dylgrn.png?)
+![picture](https://github.com/dylgrn.png?size=50)
